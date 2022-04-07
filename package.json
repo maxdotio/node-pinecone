@@ -1,0 +1,31 @@
+{
+  "name": "pinecone-io",
+  "version": "1.0.0",
+  "description": "Javascript client for the Pinecone.io API",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxdotio/node-pinecone.git"
+  },
+  "keywords": [
+    "search",
+    "vector",
+    "ann"
+  ],
+  "author": "Max Irwin",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/maxdotio/node-pinecone/issues"
+  },
+  "homepage": "https://github.com/maxdotio/node-pinecone#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.3"
+  }
+}

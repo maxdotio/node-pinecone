@@ -1,0 +1,88 @@
+(base) ➜  example git:(main) ✗ PINECONE_API_KEY=********-****-****-****-************ node quick_start.js
+-------------------------------------------------------------------------
+Success! Collection "pretty-colors" created!
+
+Waiting for "pretty-colors" to be ready...
+Collection "pretty-colors" is ready!
+-------------------------------------------------------------------------
+Collections found!"
+[ 'pretty-colors' ]
+-------------------------------------------------------------------------
+Collection "pretty-colors found!"
+{
+  database: {
+    name: 'pretty-colors',
+    index_type: 'approximated',
+    metric: 'dotproduct',
+    dimension: 3,
+    replicas: 1,
+    shards: 1,
+    pods: 1,
+    pod_type: 'p1',
+    index_config: { approximated: [Object] },
+    kind: 'database'
+  },
+  status: {
+    ready: true,
+    host: 'pretty-colors-******.svc.us-west1-gcp.pinecone.io',
+    port: 443,
+    waiting: [],
+    crashed: []
+  }
+}
+-------------------------------------------------------------------------
+Now using https://pretty-colors-******.svc.us-west1-gcp.pinecone.io:443/"
+Uploaded to "pretty-colors successfully!"
+{ upsertedCount: 5 }
+-------------------------------------------------------------------------
+Search results for 0.8,0.1,0.7
+{
+  "results": [
+    {
+      "matches": [
+        {
+          "id": "colors-4",
+          "score": 1.44,
+          "values": [],
+          "metadata": {
+            "color": "purple"
+          }
+        },
+        {
+          "id": "colors-1",
+          "score": 0.799999952,
+          "values": [],
+          "metadata": {
+            "color": "red"
+          }
+        }
+      ],
+      "namespace": "pretty-colors"
+    }
+  ]
+}
+-------------------------------------------------------------------------
+Search results for 0.8,0.1,0.7 with [object Object]
+{
+  "results": [
+    {
+      "matches": [
+        {
+          "id": "colors-5",
+          "score": 0.73,
+          "values": [],
+          "metadata": {
+            "color": "cyan"
+          }
+        }
+      ],
+      "namespace": "pretty-colors"
+    }
+  ]
+}
+-------------------------------------------------------------------------
+Deleted "pretty-colors successfully!"
+
+Waiting for pretty-colors to dissappear.
+Could no longer access collection "pretty-colors"!
+All gone!
